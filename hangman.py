@@ -1,8 +1,7 @@
 import random
-
 import tester
 
-
+## creates list of words for difficulty setting
 f = open('20k.txt', 'r')
 list = []
 list4 = []
@@ -16,7 +15,7 @@ for word in f.read().split():
     elif len(word) == 10:
         list10.append(word)
 
-
+## user selects difficulty
 tries = 0
 diff = 0
 secretWord = ""
@@ -27,6 +26,8 @@ while tries < 10:
     except ValueError:
         print("enter 1 2 or 3")
         tries += 1
+
+## decides which of the lists/which script to use
 
 if diff == 1:
     randNum = random.randint(0, len(list4))
@@ -40,11 +41,3 @@ else:
     randNum = random.randint(0, len(list10))
     secretWord = list10[randNum]
     tester.hard(secretWord)
-
-
-
-
-    
-
-
-
