@@ -10,7 +10,6 @@ def easy(tester):
     for chars in tester:
         temp2.append(chars) ## strings are immutable. using a list instead
     counter = 8 ##number of guesses
-    temp = "____"
     
     while counter > 0:
         try:
@@ -53,7 +52,6 @@ def medium(tester):
     for chars in tester:
         temp2.append(chars)
     counter = 12
-    temp = "____"
     
     while counter > 0:
         try:
@@ -93,7 +91,6 @@ def hard(tester):
     for chars in tester:
         temp2.append(chars)
     counter = 15
-    temp = "____"
     
     while counter > 0:
         try:
